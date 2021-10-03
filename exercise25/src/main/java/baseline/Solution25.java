@@ -5,33 +5,93 @@ package baseline;
  *  Copyright 2021 Richard Lopez
  */
 
+import java.util.Scanner;
+
 public class Solution25 {
+    private final static Scanner in = new Scanner(System.in);
+
     public static void main(String[] args) {
         //prompt to enter password
         //scan for password
         //call passwordValidator function
-        //if else statement to determine which it is
+        //switch statement to determine which it is
         //print status of password
+        String passwordType = "";
+
+        System.out.print("What is your password? ");
+        String password = in.nextLine();
+
+        int passwordStrength = passwordValidator(password);
+
+        switch(passwordStrength){
+            case 1:
+                passwordType = "very weak";
+                break;
+            case 2:
+                passwordType = "weak";
+                break;
+            case 3:
+                passwordType = "strong";
+                break;
+            case 4:
+                passwordType = "very strong";
+                break;
+            default:
+                passwordType = "not adequate";
+                break;
+        }
+
+        System.out.printf("the password \'%s\' is a %s password", password, passwordType);
     }
 
-    public int passwordValidator(String password){
-        //switch case statement to determine which type of password it is
-        //very weak case.
-        //if statement for length
-        //loop through string to check for numbers
-        //return 1 if true
-        //weak case.
-        //if statement for length
-        //loop through string to check for letters
-        //return 2 if true
-        //strong case.
-        //if statement to check length
-        //for loop to check letters and numbers
-        //return 3 if true
-        //very strong case.
-        //if statement to check length more than 8 letters
-        //for loop to check letters, numbers, and special characters
-        //return 4 if true
+    public static int passwordValidator(String password){
+        //declare variables
+        //loop to count char types
+        //if else to determine if length more or less than 8 characters
+        //if else statements to check each password type
+        //return returnType
 
+        int numberCount = 0;
+        int letterCount = 0;
+        int specialCount = 0;
+        int returnType = 0;
+
+        //loop to count character types
+        for(int counter = 0; counter < password.length(); counter++){
+            char c = password.charAt(counter);
+            if(Character.isDigit(c)){
+                numberCount++;
+            }
+            if(Character.isLetter(c)){
+                letterCount++;
+            }
+            if(!Character.isLetterOrDigit(c)){
+                specialCount++;
+            }
+        }
+
+        //weak cases
+        if(password.length() < 8){
+            if(numberCount == password.length()){
+                returnType = 1;
+            }
+            else if(letterCount == password.length()){
+                returnType = 2;
+            }
+        }
+        //strong cases
+        else if(password.length() >= 8){
+            if(numberCount >= 1 && letterCount == password.length() - numberCount){
+                returnType = 3;
+            }
+            else if(numberCount + letterCount + specialCount == password.length())
+                returnType = 4;
+        }
+        //error case
+        else{
+            returnType = 0;
+        }
+
+        return returnType;
     }
 }

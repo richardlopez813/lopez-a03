@@ -1,0 +1,7 @@
+
+`
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ûÃÚ¸úÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(–ÏÂÊ
+S	java:S106,"9Replace this use of System.out or System.err by a logger.(Ò¡Œùÿÿÿÿ
+g
+java:S3776/"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ÍÏ
