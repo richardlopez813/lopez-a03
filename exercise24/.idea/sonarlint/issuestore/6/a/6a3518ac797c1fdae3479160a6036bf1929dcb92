@@ -2,9 +2,9 @@
 `
 java:S1124
 "EReorder the modifiers to comply with the Java Language Specification.(ûÃÚ¸úÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(õœñøÿÿÿÿ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(¡üĞÄ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(Ù¸î 
-S	java:S106"9Replace this use of System.out or System.err by a logger.(ùÅ°µøÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(õœñøÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¡üĞÄ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ù¸î 
+S	java:S106""9Replace this use of System.out or System.err by a logger.(ùÅ°µøÿÿÿÿ
 W
-java:S11266"AReplace this if-then-else statement by a single return statement.(®íÑ¡
+java:S11267"AReplace this if-then-else statement by a single return statement.(®íÑ¡
