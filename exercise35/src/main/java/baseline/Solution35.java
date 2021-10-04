@@ -3,21 +3,42 @@ package baseline;
  *  UCF COP3330 Fall 2021 Assignment 3 Solutions
  *  Copyright 2021 Richard Lopez
  */
-public class Solution35 {
-    public static void main(String[] args) {
-        //declare array
-        for(){
-            //prompt for data entry
-            //scan for name
 
-            //check if input = null
-            if(){
-                //break from loop
+import java.util.ArrayList;
+import java.util.Random;
+import java.util.Scanner;
+
+public class Solution35 {
+    private final static Scanner in = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        //declare arraylist
+        //declare loop condition
+        //declare variables
+        //loop number question asking
+        //generate random number
+        //print winner using random number as index
+        
+        ArrayList<String> winnerNames = new ArrayList<String>();
+        boolean loopCondition = true;
+        int counter = 0;
+
+        while(loopCondition){
+            System.out.println("Enter a name: ");
+            String newName = in.nextLine();
+
+            if(newName == "") {
+                loopCondition = false;
+                continue;
             }
-            //name = current index of array
+
+            winnerNames.add(newName);
+            counter++;
         }
 
-        //generate random number
-        //print winner
+        Random random = new Random();
+        int randomNum = random.nextInt(winnerNames.size());
+
+        System.out.printf("The winner is... %s", winnerNames.get(randomNum));
     }
 }

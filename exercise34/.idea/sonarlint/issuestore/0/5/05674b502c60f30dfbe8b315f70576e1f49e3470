@@ -1,0 +1,8 @@
+
+`
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ûÃÚ¸úÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Úû‘ñÿÿÿÿÿ
+N	java:S106""9Replace this use of System.out or System.err by a logger.(ç¿Ìà
+Z	java:S106,"9Replace this use of System.out or System.err by a logger.(Úû‘ñÿÿÿÿÿ8­Š¶ÃÄ/
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ôŸÉÿÿÿÿÿ

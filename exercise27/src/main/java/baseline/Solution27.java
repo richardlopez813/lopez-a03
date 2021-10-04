@@ -1,10 +1,14 @@
 package baseline;
+
+import java.util.Scanner;
+
 /*
  *  UCF COP3330 Fall 2021 Assignment 3 Solutions
  *  Copyright 2021 Richard Lopez
  */
 public class Solution27 {
     //declare string variables
+    private final static Scanner in = new Scanner(System.in);
 
     public static void main(String[] args) {
        //prompt for firstName
@@ -15,15 +19,31 @@ public class Solution27 {
        //scan for zipCode
         //prompt for id
         //scan for id
-
         //call validateInput function
+        System.out.print("Enter the first name: ");
+        String firstName = in.nextLine();
+        System.out.print("Enter the last name: ");
+        String lastName = in.nextLine();
+        System.out.print("Enter the ZIP code name: ");
+        String zipCode = in.nextLine();
+        System.out.print("Enter the employee ID name: ");
+        String id = in.nextLine();
+
+
 
     }
-    public String fNameChecker(){
+    public void fNameChecker(String firstName){
         //if name at least 2 characters long
         //return null
         //if name less than 2 characters
         //return message
+
+        String returnMessage;
+
+        if(firstName.length() < 2)
+        {
+            System.out.print("The first name must be at least 2 characters long.");
+        }
     }
 
     public String lNameChecker(){

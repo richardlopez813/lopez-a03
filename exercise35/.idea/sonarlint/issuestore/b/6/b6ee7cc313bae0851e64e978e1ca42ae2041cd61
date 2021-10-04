@@ -1,0 +1,11 @@
+
+`
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ûÃÚ¸úÿÿÿÿ
+I
+java:S1481",Remove this unused "counter" local variable.(ŒÂëó8‹ÇëÃÄ/
+S	java:S106"9Replace this use of System.out or System.err by a logger.(°ƒ¯¸üÿÿÿÿ
+S	java:S106*"9Replace this use of System.out or System.err by a logger.(ƒŠ¤×ıÿÿÿÿ
+o
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¼ù©
+W
+java:S4973"<Strings and Boxed types should be compared using "equals()".(áÊŒÉøÿÿÿÿ
