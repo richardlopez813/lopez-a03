@@ -8,7 +8,7 @@ import java.util.Random;
  *  UCF COP3330 Fall 2021 Assignment 3 Solutions
  *  Copyright 2021 Richard Lopez
  */
-public class Solution32 {
+public class Solution32{
     private final static Scanner in = new Scanner(System.in);
 
     public static void main(String[] args){
@@ -22,20 +22,16 @@ public class Solution32 {
 
         String yesOrNo = "y";
 
-        System.out.print("Enter the difficulty level (1, 2, or 3): ");
-        int difficulty = in.nextInt();
-        System.out.print("I have my number. What's your guess? ");
-
-        //while guest wants to replay
-        while(yesOrNo == "y"){
-            //call for guessingGame
-            //prompt for replay
-            //scan input
+        //enter do while loop which prompts user for input level and
+        //then calls game method to guess number, breaking condition is yesOrNo = "n"
+        do {
+            System.out.print("Enter the difficulty level (1, 2, or 3): ");
+            int difficulty = in.nextInt();
+            System.out.print("I have my number. What's your guess? ");
             guessingGame(difficulty);
-            in.nextLine();
             System.out.print("Do you wish to play again (Y/N)? ");
             yesOrNo = in.next();
-        }
+        } while (yesOrNo.equalsIgnoreCase("y"));
     }
     //guessing game
     public static void guessingGame(int difficulty){
@@ -90,7 +86,11 @@ public class Solution32 {
                 System.out.print("Sorry. That's not a valid input.\n");
                 counter++;
             }
+
         }
+
     }
+
 }
+
 

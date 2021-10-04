@@ -1,15 +1,10 @@
 
-E
-java:S1656"/Remove or correct this useless self-assignment.(Î“ùó
-J
-java:S1656""/Remove or correct this useless self-assignment.(ŞÖµıÿÿÿÿ
-]
-java:S2184/"BCast one of the operands of this division operation to a "double".(óª‘øÿÿÿÿ
-V
-java:S21841"@Cast one of the operands of this integer division to a "double".(·õ„ê
-V
-java:S21841"@Cast one of the operands of this integer division to a "double".(·õ„ê
-w
-java:S4165"aRemove this useless assignment; "bal" already holds the assigned value along all execution paths.(Î“ùó
-|
-java:S4165""aRemove this useless assignment; "apr" already holds the assigned value along all execution paths.(ŞÖµıÿÿÿÿ
+s
+java:S1128"QRemove this unnecessary import: java.lang classes are always implicitly imported.(Š‘…ûıÿÿÿÿ8ÃüšÈÄ/
+V	java:S125*"<This block of commented-out lines of code should be removed.(ê´ìÓùÿÿÿÿ
+j
+java:S1104"OMake bal a static final constant or non-public and provide accessors if needed.(”úÎ¯øÿÿÿÿ
+j
+java:S1104"OMake apr a static final constant or non-public and provide accessors if needed.(œü›çúÿÿÿÿ
+h
+java:S1104"RMake monPay a static final constant or non-public and provide accessors if needed.(÷¦‰Ä

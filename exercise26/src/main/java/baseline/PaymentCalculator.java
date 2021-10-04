@@ -1,6 +1,7 @@
 package baseline;
 
 import static java.lang.Math.log;
+import java.lang.Math;
 
 public class PaymentCalculator {
     //declare static intake variables
@@ -8,33 +9,24 @@ public class PaymentCalculator {
     //set and get methods
     //calculate months until its paid off
 
-    private int bal;
-    private int apr;
-    private int monPay;
+    public double bal;
+    public double apr;
+    public double monPay;
 
-    public PaymentCalculator(int bal, int apr, int monPay){
+    public PaymentCalculator(double bal, double apr, double monPay){
         this.bal = bal;
         this.apr = apr;
         this.monPay = monPay;
     }
 
-    public int getBal() {
+    public double getBal() {
         return bal;
     }
-    public int getApr() {
+    public double getApr() {
         return apr;
     }
-    public int getMonPay() {
+    public double getMonPay() {
         return monPay;
-    }
-    public void setBal(){
-        this.bal = bal;
-    }
-    public void setApr(){
-        this.apr = apr;
-    }
-    public void setMonPay(){
-        this.apr = monPay;
     }
 
     public int calculateMonthsUntilPaidOff(){
@@ -42,15 +34,14 @@ public class PaymentCalculator {
         //round up numOfMonths
         //return numOfMonths
 
-        double numOfMonths = 0;
+        double numOfMonths;
 
-        double dailyRate = apr/365;
+        double dailyRate = apr/365.0;
 
-        numOfMonths = -(1/30) * log(1 + bal/monPay * (1 - Math.pow(1 + dailyRate,30)) / log(1 + dailyRate));
-        Math.ceil(numOfMonths);
+        numOfMonths = (-(1.0/30.0) * log(1.0 + bal/monPay * (1.0 - Math.pow(1 + dailyRate,30.0)) / log(1.0 + dailyRate)));
+        //numOfMonths = Math.ceil(numOfMonths);
 
-
-        return (int) numOfMonths;
+        return (int)numOfMonths;
     }
 }
 

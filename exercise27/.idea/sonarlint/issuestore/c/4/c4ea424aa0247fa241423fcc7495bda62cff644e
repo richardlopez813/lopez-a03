@@ -1,26 +1,11 @@
 
 `
 java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ûÃÚ¸úÿÿÿÿ
-Q
-java:S1854"6Remove this useless assignment to local variable "id".(úó«Ãüÿÿÿÿ
-V
-java:S1854";Remove this useless assignment to local variable "zipCode".(ÌôÇëüÿÿÿÿ
-R
-java:S1854"<Remove this useless assignment to local variable "lastName".(Õ¿³ç
-X
-java:S1854"=Remove this useless assignment to local variable "firstName".(Šèúúÿÿÿÿ
 N	java:S106"9Replace this use of System.out or System.err by a logger.(Â ê
-I
-java:S1481".Remove this unused "firstName" local variable.(Šèúúÿÿÿÿ
 N	java:S106"9Replace this use of System.out or System.err by a logger.(€™±
-C
-java:S1481"-Remove this unused "lastName" local variable.(Õ¿³ç
 S	java:S106"9Replace this use of System.out or System.err by a logger.(ùƒ­ûÿÿÿÿ
-G
-java:S1481",Remove this unused "zipCode" local variable.(ÌôÇëüÿÿÿÿ
 S	java:S106"9Replace this use of System.out or System.err by a logger.(Ô›“–ûÿÿÿÿ
-B
-java:S1481"'Remove this unused "id" local variable.(úó«Ãüÿÿÿÿ
-H
-java:S1481)"2Remove this unused "returnMessage" local variable.(®¨Èº
-N	java:S106-"9Replace this use of System.out or System.err by a logger.(ƒÈ’Ô
+1
+java:S3626R"Remove this redundant jump.(ÉŠ©ƒ
+N	java:S106s"9Replace this use of System.out or System.err by a logger.(—ë¬¯
+S	java:S106v"9Replace this use of System.out or System.err by a logger.(ã«ç¡øÿÿÿÿ

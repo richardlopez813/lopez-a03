@@ -22,21 +22,20 @@ public class Solution26 {
         //create PaymentCalculator object with numbers
         //print results
 
-        int bal = 0;
-        int apr = 0;
-        int monPay = 0;
+        double bal, apr, monPay;
 
         System.out.print("What is your balance? ");
-        bal = in.nextInt();
+        bal = in.nextDouble();
         System.out.print("What is the APR on the card (as a percent)? ");
-        apr = in.nextInt();
+        apr = in.nextDouble();
+        apr /= 100;
         System.out.print("What is the monthly payment you can make? ");
-        monPay = in.nextInt();
-
+        monPay = in.nextDouble();
+        
         PaymentCalculator calculation1 = new PaymentCalculator(bal, apr, monPay);
-        //System.out.printf("%d %d %d\n",calculation1.getBal(), calculation1.getApr(), calculation1.getMonPay());
 
-        System.out.printf("It will take you %d months to pay off this card.",
-                calculation1.calculateMonthsUntilPaidOff());
+        int months = calculation1.calculateMonthsUntilPaidOff();
+
+        System.out.println("It will take you " + months + " months to pay off this card.");
     }
 }
